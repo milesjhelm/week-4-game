@@ -1,4 +1,4 @@
-<!-- Miles Helm First Bootstrap Project -->
+<!-- Miles Helm Crystal Game -->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -11,9 +11,7 @@
   <title>Crystals</title>
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
-  <!-- Bootstrap CDN -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
-  <!-- The journal.css file comes from bootswatch.com -->
+  <!-- Style of page is "Cyborg" from bootswatch.com -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -21,46 +19,81 @@
 
 <body>
 
-
-  <!-- Top of document, including my name (since that, also, is a link) is a nav bar -->
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" id="navTitle" href="index.html">Miles Helm</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector Conundrum</h1>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <!-- The "About Me" and "Connect with Me" sections are part of the same row -->
+
+  <!-- The target/score and the rules header are on the same row -->
+  <!-- Below the score are the gems-->
   <div class="container">
     <div class="row">
       <div class="col-md-8">
         <div class="panel panel-default">
         <!-- <div class="page-header"> -->
-          <div class="panel-heading">
-            <h1 id="aboutMe">About Me</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel-heading">
+                <h2 id="roundTarget">Target: </h2>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel-heading">
+                <h2 id="roundScore">Score: </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <a id="emerald">
+                <img  src="assets/images/emerald.jpeg" class="img-responsive"  class="img-thumbnail">
+              </a>
+              </div>
+            <div class="col-md-3">
+              <a id="ruby">
+                <img src="assets/images/ruby.jpeg" class="img-responsive"  class="img-thumbnail">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a id="amethyst">
+                <img src="assets/images/amethyst.jpeg" class="img-responsive"  class="img-thumbnail">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a id="diamond">
+                <img src="assets/images/diamond.jpeg" class="img-responsive"  class="img-thumbnail">
+              </a>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-3">
+              <div class="panel-heading">
+                <br>
+                <h3 id="wins">Wins: </h3>
+              </div>
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+            <!-- <div class="col-md-3"> -->
+              <div class="panel-heading">
+                <h3 id="losses">Losses: </h3>
+              </div>
+            </div>
           </div>
 <!--         </div>
         <div class="row"> -->
 <!--           <div class="col-md-12">
             <div class="panel panel-default"> -->
-          <img id="profilePic" src="assets/images/amethyst.jpeg" class="img-thumbnail">
+          <!-- <img id="profilePic" src="assets/images/amethyst.jpeg" class="img-thumbnail"> -->
               <!-- <img src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail"> -->
   <!--           </div>
             <div class="col-md-9"> -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
-            eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies. Aenean
-            at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
-            eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies.Aenean at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
-          </p>
+<!--           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor  -->
         </div>
       </div>
         <!-- </div> -->
@@ -69,26 +102,22 @@
 
       <div class="col-md-4">
         <div class="panel panel-default">
-
           <div class="panel-heading">
-            <h3 class="panel-title">Connect with Me</h3>
+            <h2>Rules</h2>
           </div>
 
-          <div class="panel-body">
+          <!-- <div class="panel-body"> -->
+          <div>
             <div class="row">
-              <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/miles-helm-ba78333" target="_blank">
-                  <img  src="assets/images/emerald.jpeg" class="img-responsive"  class="img-thumbnail">
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="https://github.com/milesjhelm" target="_blank">
-                  <img src="assets/images/ruby.jpeg" class="img-responsive"  class="img-thumbnail">
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="http://stackoverflow.com/users/7482964/miles-helm" target="_blank">
-                  <img src="assets/images/diamond.jpeg" class="img-responsive"  class="img-thumbnail">
+              <div class="col-md-12">
+                <a>
+                  <ul id="rules">
+                    <li><em>Target</em> is a random number.
+                    <li>Win by making <em>Score</em> match <em>Target</em>.
+                    <li>Increase <em>Score</em> by clicking on a gem.
+                    <li>Each gem has a random value which changes each round.
+                    <li>Lose if <em>Score</em> is greater than <em>Target</em>.
+                  </ul>
                 </a>
               </div>
             </div>           
@@ -102,7 +131,7 @@
 
   <p>Click the button to display a random number between 1 and 10.</p>
 
-  <button onclick="myFunction()">Try it</button>
+  <button onclick="setGems()">Try it</button>
 
   <p id="demo"></p>
   <p id="emerald"></p>
@@ -116,14 +145,19 @@
     <div class="row">
 
       <!-- Calculator Panel -->
-      <div class="col-lg-4">
+      <div class="col-md-9">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Calculator</h3>
+            <h3 class="panel-title">Gems</h3>
           </div>
 
           <div class="panel-body">
-            <button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
+
+            <button id="emerald" class="btn btn-primary number" value="1"><h1>1</h1></button>
+            <button id="ruby" class="btn btn-primary number" value="2"><h1>2</h1></button>
+            <button id="diamond" class="btn btn-primary number" value="3"><h1>3</h1></button>
+            <button id="amethyst" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
+<!--             <button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
             <button id="button-2" class="btn btn-primary number" value="2"><h1>2</h1></button>
             <button id="button-3" class="btn btn-primary number" value="3"><h1>3</h1></button>
             <button id="button-plus" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
@@ -143,7 +177,7 @@
             <button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
             <button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
             <br><br>
-            <button id="button-clear" class="btn btn-default clear" value="clear"><h1>clear</h1></button>
+            <button id="button-clear" class="btn btn-default clear" value="clear"><h1>clear</h1></button> -->
           </div>
         </div>
       </div>
@@ -166,118 +200,9 @@
     </div>
   </div>
 
-<!--   <script type="text/javascript">
 
-    $(document).ready(function() {
 
-      // Variables
-      var firstNumber = "";
-      var secondNumber = "";
-      var operator = "";
-      var result = 0;
-      var hasNumber = false;
-      var firstNumberComplete = false;
-      var lockButtons = false;
-
-      // Check if any button is clicked...
-      $(document).on("click", "button", function() {
-
-        // Checks if it's a number and that its not the end of the calculation ("!lockButtons")
-        if ($(this).hasClass("number") && !lockButtons) {
-
-          // We'll then set our "hasNumber" variable to true to indicate that we can proceed in selecting an operator.
-          hasNumber = true;
-
-          // If we haven't received an operator yet...
-          if (firstNumberComplete === false) {
-
-            // Then grab the number of the value clicked and build a string with it
-            firstNumber += $(this).attr("value");
-
-            // Print the number to the firstPage
-            console.log(firstNumber);
-
-            // Print it to the div
-            $("#first-number").html(firstNumber);
-          }
-
-          // If we have received an operator already...
-          else {
-
-            // Grab the number of the value clicked and build a string with it
-            secondNumber += $(this).attr("value");
-
-            // Print the number to the firstPage
-            console.log(secondNumber);
-
-            // Print it to the div
-            $("#second-number").html(secondNumber);
-          }
-        }
-
-        // Checks if its an operator (but not "=")
-        if ($(this).hasClass("operator") && hasNumber && !lockButtons) {
-          firstNumberComplete = true;
-
-          // Set the visual to show the operator's symbol
-          $("#operator").html("<h1>" + $(this).text() + "</h1>");
-          operator = $(this).attr("value");
-        }
-
-        // Checks if the equal button has been pressed. If so...
-        if ($(this).hasClass("equal")) {
-
-          // Lock the keyboard from being clicked
-          lockButtons = true;
-
-          // Convert the numbers into integers
-          firstNumber = parseInt(firstNumber);
-          secondNumber = parseInt(secondNumber);
-
-          // Then figure out which operator was clicked and perform the necessary functions.
-          // Then show the result in the HTML
-          if (operator === "plus") {
-            result = firstNumber + secondNumber;
-          }
-
-          if (operator === "minus") {
-            result = firstNumber - secondNumber;
-          }
-
-          if (operator === "times") {
-            result = firstNumber * secondNumber;
-          }
-
-          if (operator === "divide") {
-            result = firstNumber / secondNumber;
-          }
-
-          if (operator === "power") {
-            result = Math.pow(firstNumber, secondNumber);
-          }
-
-          $("#result").html(result);
-        }
-
-        // If clear is selected then wipe away all of the content from the screen and unlock the buttons.
-        if ($(this).hasClass("clear")) {
-
-          firstNumber = "";
-          secondNumber = "";
-          operator = "";
-          result = 0;
-          hasNumber = false;
-          firstNumberComplete = false;
-          lockButtons = false;
-
-          $("#first-number, #second-number, #operator, #result").empty();
-        }
-      });
-    });
-
-  </script> -->
-
-  <!-- Found a neat navbar for the footer section -->
+  <!-- Copyright footer -->
   <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
       <div class="row">
