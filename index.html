@@ -34,19 +34,23 @@
     <div class="row">
       <div class="col-md-8">
         <div class="panel panel-default">
-        <!-- <div class="page-header"> -->
+ 
           <div class="row">
-            <div class="col-md-6">
-              <div class="panel-heading">
-                <h2 id="roundTarget">Target: </h2>
-              </div>
-            </div>
+
             <div class="col-md-6">
               <div class="panel-heading">
                 <h2 id="roundScore">Score: </h2>
               </div>
             </div>
+
+            <div class="col-md-6">
+              <div class="panel-heading">
+                <h2 id="roundTarget">Target: </h2>
+              </div>
+            </div>
+
           </div>
+
           <div class="row">
             <div class="col-md-3">
               <a id="emerald">
@@ -82,6 +86,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -91,102 +96,24 @@
           <div class="panel-heading">
             <h2>Rules</h2>
           </div>
-
-          <!-- <div class="panel-body"> -->
           <div>
-            <!-- <div class="row"> -->
-              <!-- <div class="col-md-12"> -->
-                <a>
-                  <ul id="rules">
-                    <li><em>Target</em> is a random number.
-                    <li>Win by making <em>Score</em> equal <em>Target</em>.
-                    <li>Increase <em>Score</em> by clicking on a gem.
-                    <li>Each gem has a random value which changes each round.
-                    <li>Lose if <em>Score</em> is greater than <em>Target</em>.
-                  </ul>
-                </a>
-              <!-- </div> -->
-            <!-- </div>            -->
+            <a>
+              <ul id="rules">
+                <li><em>Target</em> is a random number.
+                <li>Win by making <em>Score</em> equal <em>Target</em>.
+                <li>Increase <em>Score</em> by clicking on a gem.
+                <li>Each gem has a random value which stays the same until a win or a loss.
+                <li>After a win or a loss all gems have a new value.
+                <li>Lose if <em>Score</em> is greater than <em>Target</em>.
+              </ul>
+            </a>
           </div>
-
         </div>
       </div>
+
+
     </div>
   </div>
-
-
-<!--   <p>Click the button to display a random number between 1 and 10.</p>
-
-  <button onclick="setRound()">Try it</button>
-
-  <p id="demo"></p>
-  <p id="emerald"></p>
-  <p id="diamond"></p>
-  <p id="ruby"></p>
-  <p id="amethyst"></p> -->
-
-
-    <div class="container">
-
-    <div class="row">
-
-      <!-- Calculator Panel -->
-      <div class="col-md-9">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Gems</h3>
-          </div>
-
-          <div class="panel-body">
-
-            <button id="emerald" class="btn btn-primary number" value="1"><h1>1</h1></button>
-            <button id="ruby" class="btn btn-primary number" value="2"><h1>2</h1></button>
-            <button id="diamond" class="btn btn-primary number" value="3"><h1>3</h1></button>
-            <button id="amethyst" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
-<!--             <button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
-            <button id="button-2" class="btn btn-primary number" value="2"><h1>2</h1></button>
-            <button id="button-3" class="btn btn-primary number" value="3"><h1>3</h1></button>
-            <button id="button-plus" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
-            <br><br>
-            <button id="button-4" class="btn btn-primary number" value="4"><h1>4</h1></button>
-            <button id="button-5" class="btn btn-primary number" value="5"><h1>5</h1></button>
-            <button id="button-6" class="btn btn-primary number" value="6"><h1>6</h1></button>
-            <button id="button-minus" class="btn btn-danger operator" value="minus"><h1>&minus;</h1></button>
-            <br><br>
-            <button id="button-7" class="btn btn-primary number" value="7"><h1>7</h1></button>
-            <button id="button-8" class="btn btn-primary number" value="8"><h1>8</h1></button>
-            <button id="button-9" class="btn btn-primary number" value="9"><h1>9</h1></button>
-            <button id="button-multiply" class="btn btn-danger operator" value="times"><h1>&times;</h1></button>
-            <br><br>
-            <button id="button-0" class="btn btn-primary number" value="0"><h1>0</h1></button>
-            <button id="button-divide" class="btn btn-danger operator" value="divide"><h1>&divide;</h1></button>
-            <button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
-            <button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
-            <br><br>
-            <button id="button-clear" class="btn btn-default clear" value="clear"><h1>clear</h1></button> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Result Panel -->
-      <div class="col-lg-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Result</h3>
-          </div>
-          <div class="panel-body">
-            <h1 id="first-number"></h1>
-            <h1 id="operator"></h1>
-            <h1 id="second-number"></h1>
-            <hr>
-            <h1 id="result"></h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 
   <!-- Copyright footer -->
   <nav class="navbar navbar-default navbar-fixed-bottom">
@@ -201,9 +128,6 @@
     </div>
   </nav>
     
-<!--   <div class="footer">
-    &copy; Copyright 2017 Miles Helm
-  </div> -->
 
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
